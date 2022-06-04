@@ -1,3 +1,58 @@
 @charset "utf-8";
 
-body{background-color: aqua;}
+* {
+    box-sizing: border-box;
+}
+
+.nav{
+    position: fixed;
+    right:15px;
+    top:50%
+}
+
+.slide-ls{
+    display: flex;
+    flex-wrap: wrap; /*換行*/
+    width: 300vw;/*設定父層寬度*/
+    height: 200vw;
+}
+
+.mask{
+    overflow: hidden;
+}
+
+.slide{
+    width: 100vw;
+    height: 100vw;
+}
+
+.slide-item {
+    padding: 3rem 5rem;
+    /*viewport width可視範圍寬度*/
+    width: 100vw;/*因為父層總寬是300vw，所以子層100vw的話就可以達到一排三個*/ 
+    height: 100vw;
+}
+
+.slide-item-pdf {
+    background-color: #333;
+}
+
+.slide-item-pr {
+    background-color: #dd1f8e;
+}
+
+.slide-item-ps {
+    background-color: #00a7e2;
+}
+
+.slide-item-ae {
+    background-color: #620294;
+}
+
+.slide-item-ai {
+    background-color: #ee9a10;
+}
+
+.slide-item-dw {
+    background-color: #84c922;
+}
